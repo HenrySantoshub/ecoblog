@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body {
+
+    background-color: white;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header .btn-contato button,
+.hero-site button {
+    border-radius: 40px;
+    border: #fff 1px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+/*HEADER*/
+
+html {
+    scroll-behavior: smooth;
+    animation: 20s;
+}
+
+header {
+    width: 100%;
+    padding: 1px;
+    /* Reduza o padding para diminuir a altura */
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: #5b8c3a8d;
+    margin-top: 0;
+    /* Remova ou ajuste essa linha se necessário */
+
+}
+
+header .interface {
+    padding: 1px;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 140px;
+    transition: 0.2s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+header .menu-desktop nav ul {
+    list-style: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: 600;
+}
+
+.menu-desktop nav a:hover {
+    transform: scale(1.05);
+    color: rgb(36, 133, 12);
+
+}
+
+header .btn-contato button {
+    width: 150px;
+    height: 50px;
+}
+
+header .btn-contato button:hover,
+.hero-site button:hover {
+    background-color: #38a317;
+    color: #000;
+    transition: 0.9s
+}
+
+
+
+/*ESTILO DO HERO*/
+
+section.hero-site {
+
+    height: 98vh;
+    background-image: url(fundo-ecoblog.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-site .interface {
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h2 {
+    margin: 20px;
+    display: block;
+    color: #474747;
+}
+
+.hero-site .txt-hero h1 {
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 500;
+    margin: 20px;
+    color: #000;
+
+}
+
+.hero-site .txt-hero h1 span {
+    font-weight: 600;
+    display: block;
+    color: rgb(36, 133, 12);
+}
+
+.hero-site button {
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+    margin: 15px;
+}
+
+/*Titulo Blog*/
+
+.titulo {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.titulo span {
+    color: #38a317;
+}
+
+/*--blog--------------------------*/
+#blog {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.blog-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blog-heading span {
+    color: #f33c3c;
+}
+
+.blog-heading h3 {
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+
+}
+
+.blog-box {
+    width: 350px;
+    background-color: #ffffff;
+    border: 2px solid #ececec;
+    margin: 20px 20px;
+    border-radius: 8px 0;
+    transition: .2s;
+
+}
+
+.blog-box:hover{
+    transform: scale(1.05);
+    box-shadow: #0f0f0f;
+}
+
+.blog-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+}
+
+.blog-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+}
+
+.blog-text {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span {
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+
+.blog-text p {
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+
+.blog-text a {
+    color: #0f0f0f;
+}
+
+.blog-text a:hover {
+    color: #c74242;
+    transition: all ease 0.3s;
+}
+
+
+@media(max-width:1250px) {
+
+    .blog-box {
+        width: 300px;
+    }
+}
+
+@media(max-width:1100px) {
+    .blog-box {
+        width: 70%;
+    }
+}
+
+@media(max-width:550px) {
+
+    .blog-box {
+        margin: 20px 10px;
+        width: 100%;
+    }
+
+    #blog {
+        padding: 20px;
+    }
+}
+
+/*Titulo Quiz*/
+
+.titulo-2 {
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.titulo-2 span {
+    color: #38a317;
+}
+
+.titulo-3 {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    
+}
+
+.titulo-3 span {
+    color: #38a317;
+}
+
+/*ESILO SOBRE O CURSO*/
+section.sobre{
+    padding: 50px 5%;
+}
+section.sobre .flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.sobre .txt-sobre{
+    color: rgb(0, 0, 0);
+
+}
+.sobre .txt-sobre h2{
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #38a317;
+    display: block;
+    gap: 70px;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+    margin-bottom: 15px;
+    justify-content: block;
+}
+
+footer
+{
+
+    justify-content: center; /* Alinha os ícones horizontalmente ao centro */
+    width: 100%;
+    min-height: 250px;
+    background: #2b7c12;
+    display: flex;
+}
+
+footer .boxs
+{
+    width: 520px;
+    min-height: 150px;
+    padding: 30px;
+}
+footer .boxs:nth-child(4)
+{
+    width: 400px;
+}
+.boxs h2
+{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.boxs ul li{
+    margin: 10px 0px;
+    list-style: none;
+}
+.boxs ul li a
+{
+    color: #ddd;
+    text-decoration: none;
+}
+.boxs ul li a:hover
+{
+    color: #fff;
+}
+.boxs p
+{
+    color: #fff;
+    text-align: justify;
+}
+.footer
+{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #102E15;
+    padding: 0px 20px;
+}
+.footer h2
+{
+color: #fff;
+}
+.footer h2 span{
+ color: #6AAC2F;
+}
+
+.footer .sociais
+{
+    display: flex;
+}
+.sociais .sociais
+{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #102E15;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .3s linear;
+    display: flex;
+    justify-content: center; /* Centraliza as colunas horizontalmente */
+    text-align: center; /* Alinha o texto ao centro */
+    gap: 50px; /* Espaçamento entre as colunas */
+}
+.sociais .sociais i
+{
+    color: #6AAC2F;
+    font-size: 1.5em;
+    transition: color .3s linear;
+}
+.sociais .sociais:hover 
+{
+    background: #6AAC2F;
+    color: #102E15;
+
+}
+.sociais .sociais i:hover{
+
+    color: #102E15;
+}
